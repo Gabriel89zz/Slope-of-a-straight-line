@@ -31,6 +31,7 @@ namespace Slope_of_a_straight_line
             point2=new Point(x,y);
         }
 
+        //method that only receives parameters
         public void LineInfo(Line ab)
         {
             Console.WriteLine("The slope of the line that passes through the points: "+ "A:(" + ab.point1.x + "," + ab.point1.y + ")" + " B:(" + ab.point2.x + "," + ab.point2.y + ")"+" is:");
@@ -41,6 +42,7 @@ namespace Slope_of_a_straight_line
             Console.WriteLine("The slope of the line that passes through the points: " + "A:(" + x1 + "," + y1 + ")" + " B:(" + x2 + "," + y2 + ")" + " is:");
         }
 
+        //methods that receive and return
         public double GetSlope(Line ab)
         {
             double deltay=ab.point2.y-ab.point1.y;
@@ -75,9 +77,17 @@ namespace Slope_of_a_straight_line
             return "y=" + slope + "x" + signo + multi;
         }
 
+        //methods that only return
         public string ShowEquation()
         {
             return "The equation of the line is:";
+        }
+
+        //method that neither receives nor returns
+        public static void GoOut()
+        {
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey();
         }
 
         ~Line()

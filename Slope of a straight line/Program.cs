@@ -21,3 +21,4 @@ line2.LineInfo(7,8,2,5);
 Console.WriteLine(slope_line2);
 Console.WriteLine(line2.ShowEquation());
 Console.WriteLine(line2.GetEquation(7,8,2,5));
+Line.GoOut();
